@@ -40,9 +40,9 @@ body { background:#111; height:100%; }
       
     }
     #supersized.speed img {
-        
         -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
+        
     }	/*Speed*/
     #supersized.quality img {
         -ms-interpolation-mode: bicubic;

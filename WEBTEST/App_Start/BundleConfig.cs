@@ -26,6 +26,7 @@ namespace WEBTEST
                        "~/Scripts/jquery-1.10.2.js",
                        "~/Scripts/supersized-init.js",
                         "~/Scripts/supersized.3.2.7.min.js"
+                       
                         ));
          
 

@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Login";
+    
 }
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/bootstrap")
@@ -8,30 +9,67 @@
 <body>
     <div class="width:100%">
 
-        <form method="post" style="top:200px;width:100%">
-            <h1>Login</h1>
-            <div>
-                <input type="text" name="username" class="" style="width:310px" placeholder="Username" autocomplete="off">
-            </div>
-            <div>
-                <input type="password" name="password" class="" style="width:310px" placeholder="Password" oncontextmenu="return false" onpaste="return false">
-            </div>
-            <div>
-                <button id="submit" class="" type="button">Sign in</button>
+        <form method="post" style="top:200px;width:25%;height:350px;background:rgba(255,255,255,0.7);padding-top:-30px">
+            <div style="padding-top:30px">
+                <h1>Login</h1>
+
+                <div>
+                    <input type="text" name="username" class="" style="width:310px" placeholder="Username" autocomplete="off">
+                </div>
+                <div>
+                    <input type="password" name="password" class="" style="width:310px" placeholder="Password" oncontextmenu="return false" onpaste="return false">
+                </div>
+                <div>
+                    <button id="submit" class="" type="button">Sign in</button>
+                </div>
             </div>
         </form>
+
     </div>
-    <ul id="supersized" class="quality" style="visibility: visible;height:1180px;">
+    <div style="margin-top:200px">
+        <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+    </div>
+    <ul id="supersized" class="quality" style="visibility: visible;height:1180px;top:0px">
         <li class="slide-0" style="visibility: visible; opacity: 1;">
-            <img src="./img/ice.jpg" style="width: 1903px; left: 0px; top: 0px; height: 1080px;">
+            <img src="~/img/jianyue.jpg" style="width: 1903px; left: 0px; top: 0px; height: 1080px;">
         </li>
         <li class="slide-1 prevslide" style="visibility: visible; opacity: 1;">
-            <img src="./img/ice.jpg" style="width: 1903px; left: 0px; top: 0px; height: 1080px;">
+            <img src="./img/jianyue.jpg" style="width: 1903px; left: 0px; top: 0px; height: 1080px;">
         </li>
         <li class="slide-2 activeslide" style="visibility: visible; opacity: 1;">
-            <img src="./img/ice.jpg" style="width: 1903px; height: 1080px; left: 0px; top: 0px;">
+            <img src="~/img/jianyue.jpg" style="width: 1903px; height: 1080px; left: 0px; top: 0px;">
         </li>
     </ul>
 
 </body>
 </html>
+<script>
+    $(function () {
+        //$.supersized = {
+        //    vertical_center: 1,
+        //    slideshow: 1,
+        //    navigation: 1,
+        //    thumbnail_navigation: 1,
+        //    transition: 0, //0-None, 1-Fade, 2-slide top, 3-slide right, 4-slide bottom, 5-slide left 
+        //    pause_hover: 0,
+        //    slide_counter: 1,
+        //    slide_captions: 1,
+        //    slide_interval: 3000,
+        //    slides: [
+        //        {
+        //            image: '~/img/ice.jpg', title: 'City Clock Tower',
+        //            url: ''
+        //        },
+        //        {
+        //            image: '~/img/beach.jpg', title: 'Canal Park Fence',
+        //            url: ''
+        //        },
+        //        {
+        //            image: '~/img/weinisi.jpg', title: 'Old Train Tracks',
+        //            url: ''
+        //        }
+        //    ]
+        //};
+        //$("#supersized").supersized();
+    }); 
+</script>
