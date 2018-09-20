@@ -25,7 +25,8 @@ namespace WEBTEST
                       "~/Scripts/jquery-1.10.2.min.js",
                        "~/Scripts/jquery-1.10.2.js",
                        "~/Scripts/supersized-init.js",
-                        "~/Scripts/supersized.3.2.7.min.js"));
+                        "~/Scripts/supersized.3.2.7.min.js"
+                        ));
          
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

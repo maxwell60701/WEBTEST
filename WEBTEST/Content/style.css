@@ -14,6 +14,7 @@ body {
     font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
     text-align: center;
     color: #fff;
+    
 }
 
 .page-container {
@@ -41,7 +42,7 @@ input {
     padding: 0 15px;
     background: #2d2d2d; /* browsers that don't support rgba */
     *background-color: transparent;
-    background: rgba(45,45,45,.15);
+    background: #fff;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -52,7 +53,7 @@ input {
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
     -o-transition: all .2s;
     -moz-transition: all .2s;
@@ -61,19 +62,19 @@ input {
 }
 
     input:-moz-placeholder {
-        color: #fff;
+        color: #e0dcdc;
     }
 
     input:-ms-input-placeholder {
-        color: #fff;
+        color: #e0dcdc;
     }
 
     input::-webkit-input-placeholder {
-        color: #fff;
+        color: #e0dcdc;
     }
 
     input:focus {
-        outline: none;
+        outline: #72D1FF;
         -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset, 0 2px 7px 0 rgba(0,0,0,.2);
         -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset, 0 2px 7px 0 rgba(0,0,0,.2);
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset, 0 2px 7px 0 rgba(0,0,0,.2);
@@ -85,7 +86,7 @@ button {
     height: 44px;
     margin-top: 25px;
     padding: 0;
-    background: #ef4300;
+    background: #72D1FF;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
