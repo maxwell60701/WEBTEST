@@ -164,6 +164,7 @@
     <Content Include="img\beach.jpg" />
     <Content Include="img\ice.jpg" />
     <Content Include="img\jianyue.jpg" />
+    <Content Include="img\rain.jpg" />
     <Content Include="img\weinisi.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
