@@ -151,6 +151,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\index.css" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\supersized.css" />
@@ -161,6 +162,11 @@
     <Content Include="img\1.jpg" />
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
+    <Content Include="img\a1.png" />
+    <Content Include="img\a2.png" />
+    <Content Include="img\a3.png" />
+    <Content Include="img\a4.png" />
+    <Content Include="img\a5.png" />
     <Content Include="img\beach.jpg" />
     <Content Include="img\ice.jpg" />
     <Content Include="img\jianyue.jpg" />
@@ -175,11 +181,13 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\myscroll.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\supersized-init.js" />

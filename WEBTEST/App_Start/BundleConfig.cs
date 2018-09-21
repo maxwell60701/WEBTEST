@@ -25,17 +25,28 @@ namespace WEBTEST
                       "~/Scripts/jquery-1.10.2.min.js",
                        "~/Scripts/jquery-1.10.2.js",
                        "~/Scripts/supersized-init.js",
-                        "~/Scripts/supersized.3.2.7.min.js"
-                       
+                        "~/Scripts/supersized.3.2.7.min.js",
+                          "~/Scripts/supersized.3.2.7.min.js"
+                          
+
                         ));
-         
+            bundles.Add(new ScriptBundle("~/bundles/scroll").Include(
+                              "~/Scripts/myscroll.js",
+                               "~/Scripts/bootstrap.js",
+                                "~/Scripts/respond.js",
+                               "~/Scripts/jquery-1.10.2.min.js",
+                                "~/Scripts/jquery-1.10.2.js",
+                                "~/Scripts/jquery.min.js"
+
+                          ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                      "~/Content/reset.css",
                       "~/Content/style.css",
-                       "~/Content/supersized.css"));
+                       "~/Content/supersized.css",
+                       "~/Content/index.css"));
         }
     }
 }
