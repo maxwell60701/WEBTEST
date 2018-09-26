@@ -36,7 +36,9 @@ namespace WEBTEST
                                 "~/Scripts/respond.js",
                                "~/Scripts/jquery-1.10.2.min.js",
                                 "~/Scripts/jquery-1.10.2.js",
-                                "~/Scripts/jquery.min.js"
+                                "~/Scripts/jquery.min.js",
+                                "~/Scripts/jq22.js",
+                                "~/Scripts/jquery-latest.min.js"
 
                           ));
 
@@ -46,7 +48,8 @@ namespace WEBTEST
                      "~/Content/reset.css",
                       "~/Content/style.css",
                        "~/Content/supersized.css",
-                       "~/Content/index.css"));
+                       "~/Content/index.css",
+                       "~/Content/jq22.css"));
         }
     }
 }

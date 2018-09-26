@@ -46,6 +46,10 @@
 
 <script>
     $(function () {
+
+        $('#submit').click(function () {
+            window.location.href = '@Url.Action("Index","Home")';
+        })
         //$.supersized = {
         //    vertical_center: 1,
         //    slideshow: 1,
