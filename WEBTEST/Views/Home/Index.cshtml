@@ -17,29 +17,29 @@
                 <div class="row">
                     <div class="col-sm-10">
                         <div class="main-menu">
-                            @* <div class="collapse navbar-collapse">
+                            <div class="collapse navbar-collapse">
                                 <ul class="nav navbar-nav navbar-right">
-            <li class="active" style="list-style:none;float:left;"><a style="color:#000" class="headtitle" href="@Url.Action("Index","Home")">首页</a></li>
+                                    <li class="active" style="list-style:none;float:left;"><a style="color:#000" class="headtitle" href="@Url.Action("Index","Home")">首页</a></li>
 
-            <li class="smooth-menu" style="list-style:none;float:left;height:auto;padding-left:10px">
-                <a id="city" style="margin-left:20px;color:#000" href="#gallery" class="headtitle">城市</a>
-                <ul class="subclass" >
-                    <li class="subtext" >
-                        <a class="headtitle" href="#">北京</a>
-                    </li>
-                    <li  class="subtext">
-                        <a class="headtitle" href="#">上海</a>
-                    </li>
-                    <li  class="subtext">
-                        <a class="headtitle" href="#">广州</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="" style="list-style:none;float:right;margin-right:20px"><a class="headtitle" style="color:#000" href="@Url.Action("Login","Home")">退出</a></li>
-        </ul>
+                                    <li class="smooth-menu" style="list-style:none;float:left;height:auto;padding-left:10px;">
+                                        <a id="city" style="margin-left:20px;color:#000" href="#gallery" class="headtitle">介绍</a>
+                                        @*<ul class="subclass" >
+                                                <li class="subtext" >
+                                                    <a class="headtitle" href="#">北京</a>
+                                                </li>
+                                                <li  class="subtext">
+                                                    <a class="headtitle" href="#">上海</a>
+                                                </li>
+                                                <li  class="subtext">
+                                                    <a class="headtitle" href="#">广州</a>
+                                                </li>
+                                            </ul>*@
+                                    </li>
+                                    <li class="" style="list-style:none;float:right;margin-right:20px"><a class="headtitle" style="color:#000" href="@Url.Action("Login","Home")">退出</a></li>
+                                </ul>
 
-                        </div>*@
-                            <div id='cssmenu'>
+                            </div>
+                            @*<div id='cssmenu'>
                                 <ul>
                                     <li><a style="color:#000"  href="@Url.Action("Index","Home")">首页</a></li>
                                     <li class='active has-sub'>
@@ -68,10 +68,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                   
-                                    @*<li><a style="float:right;margin-left:1700px" href='@Url.Action("Login","Home")'>退出</a></li>*@
-                                </ul>
-                            </div>
+
+                                    <li><a style="float:right;margin-left:1700px" href='@Url.Action("Login","Home")'>退出</a></li>
+                                                    </ul>
+                                                </div>*@
                         </div>
                     </div>
                 </div>
@@ -83,17 +83,30 @@
     <div>
         <div class="banner" id="banner1" style="margin-top:30px;">
             <!-- 添加图片 -->
-            <div class="move" id="move" >
+            <div class="move" id="move">
                 <ul>
+                    <li class="imgclass">
+                        <img src="~/img/office.png" alt="">
+                        <div style="margin-top:-300px;margin-left:500px;margin-bottom:20px">
+                            <span style="font-size:40px;">哈哈哈哈</span>
+                        </div>
+                        <div style="margin-left:500px;margin-bottom:20px">
+                            <span>嘻嘻嘻</span>
+                        </div>
+                        <div style="margin-left:500px">
+                            <a href="#" class="bannerlink">查看详情>></a>
+                            <a href="#" class="bannerlink2">详细信息>></a>
+                        </div>
+                       
+                    </li>
+                    <li class="imgclass"><img src="~/img/quick.jpg" alt=""></li>
+                    <li class="imgclass"><img src="~/img/weinisi.jpg" alt=""></li>
                     <li class="imgclass"><img src="~/img/beach.jpg" alt=""></li>
                     <li class="imgclass"><img src="~/img/ice.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/bike.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/weinisi.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/farm.jpg" alt=""></li>
                 </ul>
             </div>
             <!-- 添加控制条 -->
-            <div class="ctrl" id="ctrl" style="top:600px;"></div>
+            <div class="ctrl" id="ctrl" style="top:480px;"></div>
         </div>
     </div>
 </body>
@@ -136,7 +149,7 @@
 <script src="~/Scripts/myscroll.js"></script>
 <script>
     $(function () {
-       
+
         $('#banner1').myscroll({
             picEl: $('#move'), //图片父级，不传默认为banner内第1个div
             ctrlEl: $('#ctrl'), //控制条父级，包括小圆点和左右箭头，不传默认为banner内第2个div
@@ -148,7 +161,7 @@
             effect: 'fade' //轮播的改变方式 top || left || fade，不传默认left
         });
         //$('#city').hover(function () {
-           
+
         //    $('.subclass').css('visibility','visible');
         //})
         //$('.subtext').blur(function () {
@@ -162,5 +175,5 @@
         //   // $('.smooth-menu').css('background-color', 'white');
         //})
     })
-    
+
 </script>
