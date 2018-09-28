@@ -85,7 +85,22 @@
     left: 0px
 }
 
+.logocontent {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
 
+.supporters {
+    padding-left: 100px
+}
+
+.footer {
+    padding-left: 100px
+}
+
+.footerhead {
+    margin-bottom: 20px
+}
 .headtitle {
     text-decoration: none;
     /*font-family: Arial,'Microsoft YaHei';*/
@@ -114,7 +129,12 @@ a {
 li {
     text-decoration: none;
 }
-
+.testimonial h5 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+}
 .bannerlink {
     display: inline-block;
     width: 150px;
@@ -347,7 +367,11 @@ li {
     margin-bottom: 40px;
 }
 
+/*自定义样式*/
 
+.img-circle{
+    border-radius:50%;
+}
 /*===========================
   --- Sections ----
 =========================== */
