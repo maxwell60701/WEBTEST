@@ -1,8 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    
 }
 
 @Scripts.Render("~/bundles/scroll")
+@Styles.Render("~/Content/Index")
 
 <html>
 <head>
@@ -18,7 +20,7 @@
                     <div class="col-sm-10">
                         <div class="main-menu">
                             <div class="collapse navbar-collapse">
-                                <ul class="nav navbar-nav navbar-right">
+                                <ul class="nav navbar-nav">
                                     <li class="active" style="list-style:none;float:left;"><a style="color:#000" class="headtitle" href="@Url.Action("Index","Home")">首页</a></li>
 
                                     <li class="smooth-menu" style="list-style:none;float:left;height:auto;padding-left:10px;">
@@ -81,7 +83,7 @@
 
     </header>
     <div>
-        <div class="banner" id="banner1" style="margin-top:30px;">
+        <div class="banner" id="banner1" style="margin-top:30px;margin-bottom:0px">
             <!-- 添加图片 -->
             <div class="move" id="move">
                 <ul>
@@ -100,13 +102,99 @@
                        
                     </li>
                     <li class="imgclass"><img src="~/img/quick.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/weinisi.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/beach.jpg" alt=""></li>
-                    <li class="imgclass"><img src="~/img/ice.jpg" alt=""></li>
+                    <li class="imgclass"><img src="~/img/scene.png" alt=""></li>
+                    <li class="imgclass"><img src="~/img/wheat.jpg" alt=""></li>
+                    <li class="imgclass"><img src="~/img/city.jpg" alt=""></li>
                 </ul>
             </div>
             <!-- 添加控制条 -->
-            <div class="ctrl" id="ctrl" style="top:480px;"></div>
+            <div class="ctrl" id="ctrl" style="top:460px;"></div>
+        </div>
+
+        <div style="margin-top:-60px">
+            <section id="section-services" class=" bg-white">
+                <div class="container">
+
+                    <div class="row mar-bot40">
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                                <h3 style="padding-top:15px;margin-bottom:20px" >Responsive</h3>
+                                <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+                            </div>
+                            
+                                
+                            
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                            </div>
+                            <h3 style="padding-top:15px;margin-bottom:20px">Multi usage</h3>
+                            <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                            </div>
+                            <h3 style="padding-top:15px;margin-bottom:20px">Beautiful</h3>
+                            <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                            </div>
+                            <h3 style="padding-top:15px;margin-bottom:20px">Valid HTML5</h3>
+                            <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                            </div>
+                            <h3 style="padding-top:15px;margin-bottom:20px">Modern</h3>
+                            <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
+                                <div class="mar-right20" style="float:left">
+                                    <img src="~/img/LOGO.png">
+                                </div>
+                            </div>
+                            <h3 style="padding-top:15px;margin-bottom:20px">Fast loading</h3>
+                            <p>Lorem ipsum dolor sit amet, elit persecuti efficiendi sit ad.</p>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
@@ -144,8 +232,9 @@
             color: #ff9d00 !important;
         }*/
 </style>
-<link href="~/Content/index.css" rel="stylesheet" />
-<link href="~/Content/jq22.css" rel="stylesheet" />
+@*<link href="~/Content/index.css" rel="stylesheet" />
+<link href="~/Content/icon-component.css" rel="stylesheet" />
+<link href="~/Content/jq22.css" rel="stylesheet" />*@
 <script src="~/Scripts/myscroll.js"></script>
 <script>
     $(function () {

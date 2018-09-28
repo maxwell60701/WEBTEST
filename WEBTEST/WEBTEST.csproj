@@ -151,12 +151,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flexslider.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\icon-component.css" />
     <Content Include="Content\index.css" />
+    <Content Include="Content\isotope.css" />
     <Content Include="Content\jq22.css" />
+    <Content Include="Content\overwrite.css" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\supersized.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\codropsicons\codropsicons.svg" />
+    <Content Include="fonts\codropsicons\license.txt" />
+    <Content Include="fonts\ecoicons\ecoicon.dev.svg" />
+    <Content Include="fonts\ecoicons\ecoicon.svg" />
+    <Content Include="fonts\flexslider\flexslider-icon.svg" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -174,6 +185,8 @@
     <Content Include="img\farm.jpg" />
     <Content Include="img\ice.jpg" />
     <Content Include="img\jianyue.jpg" />
+    <Content Include="img\office.png" />
+    <Content Include="img\quick.jpg" />
     <Content Include="img\rain.jpg" />
     <Content Include="img\weinisi.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -181,6 +194,20 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\codropsicons\codropsicons.eot" />
+    <Content Include="fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="fonts\codropsicons\codropsicons.woff" />
+    <Content Include="fonts\ecoicons\ecoicon.eot" />
+    <Content Include="fonts\ecoicons\ecoicon.ttf" />
+    <Content Include="fonts\ecoicons\ecoicon.woff" />
+    <Content Include="fonts\flexslider\flexslider-icon.eot" />
+    <Content Include="fonts\flexslider\flexslider-icon.eot%40" />
+    <Content Include="fonts\flexslider\flexslider-icon.ttf" />
+    <Content Include="fonts\flexslider\flexslider-icon.woff" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jq22.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

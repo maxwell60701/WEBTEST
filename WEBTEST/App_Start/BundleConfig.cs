@@ -27,7 +27,7 @@ namespace WEBTEST
                        "~/Scripts/supersized-init.js",
                         "~/Scripts/supersized.3.2.7.min.js",
                           "~/Scripts/supersized.3.2.7.min.js"
-                          
+
 
                         ));
             bundles.Add(new ScriptBundle("~/bundles/scroll").Include(
@@ -50,6 +50,13 @@ namespace WEBTEST
                        "~/Content/supersized.css",
                        "~/Content/index.css",
                        "~/Content/jq22.css"));
+            bundles.Add(new StyleBundle("~/Content/Index").Include(
+                    "~/Content/bootstrap.css",                  
+                     "~/Content/icon-component.css",
+                     "~/Content/index.css",
+                     "~/Content/jq22.css"
+                    ));
+
         }
     }
 }

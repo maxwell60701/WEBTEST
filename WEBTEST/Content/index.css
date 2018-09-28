@@ -11,14 +11,14 @@
     height: 635px;
 }
 
-.banner .move {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
+    .banner .move {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
 .move ul,
 .move ul li {
@@ -32,51 +32,51 @@
     text-align: center;
 }
 
-.ctrl .libs {
-    display: inline-block;
-    margin-left: 10px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #333;
-    z-index: 50;
-    cursor: pointer;
-}
+    .ctrl .libs {
+        display: inline-block;
+        margin-left: 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #333;
+        z-index: 50;
+        cursor: pointer;
+    }
 
-.ctrl span.active {
-    background-color: #fff;
-}
+    .ctrl span.active {
+        background-color: #fff;
+    }
 
-.ctrl .arrow {
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 60px;
-    top: 50%;
-    margin-top: -30px;
-    background-color: #333;
-    cursor: pointer;
-    font: 30px/58px "宋体";
-    opacity: .5;
-    color: #fff;
-    text-align: center;
-}
+    .ctrl .arrow {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        background-color: #333;
+        cursor: pointer;
+        font: 30px/58px "宋体";
+        opacity: .5;
+        color: #fff;
+        text-align: center;
+    }
 
-.ctrl .next {
-    top: -160px;
-    right: 0;
-}
+    .ctrl .next {
+        top: -160px;
+        right: 0;
+    }
 
-.ctrl .prev {
-    top: -160px;
-    left: 0;
-}
+    .ctrl .prev {
+        top: -160px;
+        left: 0;
+    }
 
-.ctrl .arrow:hover {
-    opacity: 1;
-}
+    .ctrl .arrow:hover {
+        opacity: 1;
+    }
 /*自定义样式*/
-img {
+.imgclass > img {
     width: 1920px;
     height: 500px;
 }
@@ -89,14 +89,14 @@ img {
 .headtitle {
     text-decoration: none;
     /*font-family: Arial,'Microsoft YaHei';*/
-    color:#000;
-    cursor:pointer;
-   
+    color: #000;
+    cursor: pointer;
 }
 
     .headtitle:hover {
         color: #3296fa !important;
     }
+
 .subclass {
     text-decoration: none;
     visibility: hidden;
@@ -106,14 +106,15 @@ img {
     height: auto;
     text-align: center
 }
+
 a {
     text-decoration: none;
 }
 
-li
-{
-    text-decoration:none;
+li {
+    text-decoration: none;
 }
+
 .bannerlink {
     display: inline-block;
     width: 150px;
@@ -145,8 +146,231 @@ li
     border: solid 1px #3296FA;
     font-size: 14px;
     cursor: pointer;
-    z-index:1
+    z-index: 1
 }
+/* ---- padding ---- */
+/* top */
+.pad-top0 {
+    padding-top: 0;
+}
+
+.pad-top5 {
+    padding-top: 5px;
+}
+
+.pad-top10 {
+    padding-top: 10px;
+}
+
+.pad-top15 {
+    padding-top: 15px;
+}
+
+.pad-top20 {
+    padding-top: 20px;
+}
+
+.pad-top25 {
+    padding-top: 25px;
+}
+
+.pad-top30 {
+    padding-top: 30px;
+}
+
+.pad-top35 {
+    padding-top: 35px;
+}
+
+.pad-top40 {
+    padding-top: 40px;
+}
+/* bottom */
+.pad-bot0 {
+    padding-bottom: 0;
+}
+
+.pad-bot5 {
+    padding-bottom: 5px;
+}
+
+.pad-bot10 {
+    padding-bottom: 10px;
+}
+
+.pad-bot15 {
+    padding-bottom: 15px;
+}
+
+.pad-bot20 {
+    padding-bottom: 20px;
+}
+
+.pad-bot25 {
+    padding-bottom: 25px;
+}
+
+.pad-bot30 {
+    padding-bottom: 30px;
+}
+
+.pad-bot35 {
+    padding-bottom: 35px;
+}
+
+.pad-bot40 {
+    padding-bottom: 40px;
+}
+
+
+/* ---- margin --- */
+.mar-left5 {
+    margin-left: 5px;
+}
+
+.mar-left10 {
+    margin-left: 10px;
+}
+
+.mar-left15 {
+    margin-left: 15px;
+}
+
+.mar-left20 {
+    margin-left: 20px;
+}
+
+.mar-left25 {
+    margin-left: 25px;
+}
+
+.mar-left30 {
+    margin-left: 30px;
+}
+
+.mar-right5 {
+    margin-right: 5px;
+}
+
+.mar-right10 {
+    margin-right: 10px;
+}
+
+.mar-right15 {
+    margin-right: 15px;
+}
+
+.mar-right20 {
+    margin-right: 20px;
+}
+
+.mar-right25 {
+    margin-right: 25px;
+}
+
+.mar-right30 {
+    margin-right: 30px;
+}
+
+/* top */
+.mar-top0 {
+    margin-top: 0;
+}
+
+.mar-top5 {
+    margin-top: 5px;
+}
+
+.mar-top10 {
+    margin-top: 10px;
+}
+
+.mar-top15 {
+    margin-top: 15px;
+}
+
+.mar-top20 {
+    margin-top: 20px;
+}
+
+.mar-top25 {
+    margin-top: 25px;
+}
+
+.mar-top30 {
+    margin-top: 30px;
+}
+
+.mar-top35 {
+    margin-top: 35px;
+}
+
+.mar-top40 {
+    margin-top: 40px;
+}
+
+
+/* bottom */
+.mar-bot0 {
+    margin-bottom: 0;
+}
+
+.mar-bot5 {
+    margin-bottom: 5px;
+}
+
+.mar-bot10 {
+    margin-bottom: 10px;
+}
+
+.mar-bot15 {
+    margin-bottom: 15px;
+}
+
+.mar-bot20 {
+    margin-bottom: 20px;
+}
+
+.mar-bot25 {
+    margin-bottom: 25px;
+}
+
+.mar-bot30 {
+    margin-bottom: 30px;
+}
+
+.mar-bot35 {
+    margin-bottom: 35px;
+}
+
+.mar-bot40 {
+    margin-bottom: 40px;
+}
+
+
+/*===========================
+  --- Sections ----
+=========================== */
+
+section.section {
+    margin: 0;
+    padding: 80px 0 60px 0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* --- section heading --- */
+.section-header {
+    text-align: center;
+}
+
+    .section-header h2.section-heading {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
 /*如需自定义底部小圆点样式
 
 .subtext {
