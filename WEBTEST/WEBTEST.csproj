@@ -185,10 +185,12 @@
     <Content Include="img\city.jpg" />
     <Content Include="img\ecocare.png" />
     <Content Include="img\farm.jpg" />
+    <Content Include="img\glass.jpg" />
+    <Content Include="img\grass.jpg" />
     <Content Include="img\head1.png" />
     <Content Include="img\ice.jpg" />
     <Content Include="img\icon.png" />
-    <Content Include="img\jianyue.jpg" />
+    <Content Include="img\jungle.jpg" />
     <Content Include="img\LOGO.png" />
     <Content Include="img\office.png" />
     <Content Include="img\ourcity.jpg" />
@@ -216,6 +218,7 @@
     <Content Include="fonts\fontawesome\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jq22.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

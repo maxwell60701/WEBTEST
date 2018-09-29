@@ -9,9 +9,7 @@
 	font-style: normal;
 }
 
-.hi-icon-wrap {
 
-}
 
 .hi-icon {
     display: inline-block;
@@ -407,7 +405,7 @@ text-decoration: none;
 	-webkit-animation: toRightFromLeft 0.3s forwards;
 	-moz-animation: toRightFromLeft 0.3s forwards;
 	animation: toRightFromLeft 0.3s forwards;
-}*/
+}
 
 @-webkit-keyframes toRightFromLeft {
 	49% {
