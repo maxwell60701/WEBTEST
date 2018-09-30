@@ -59,6 +59,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -142,6 +143,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Api\LoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -181,8 +183,13 @@
     <Content Include="img\a5.png" />
     <Content Include="img\beach.jpg" />
     <Content Include="img\bike.jpg" />
+    <Content Include="img\blue.jpg" />
+    <Content Include="img\bluelogo.jpg" />
+    <Content Include="img\bluelogo.png" />
+    <Content Include="img\bluesupporter.png" />
     <Content Include="img\castle.jpg" />
     <Content Include="img\city.jpg" />
+    <Content Include="img\cloud.jpg" />
     <Content Include="img\ecocare.png" />
     <Content Include="img\farm.jpg" />
     <Content Include="img\glass.jpg" />
@@ -191,12 +198,15 @@
     <Content Include="img\ice.jpg" />
     <Content Include="img\icon.png" />
     <Content Include="img\jungle.jpg" />
+    <Content Include="img\lavender.jpg" />
     <Content Include="img\LOGO.png" />
     <Content Include="img\office.png" />
     <Content Include="img\ourcity.jpg" />
     <Content Include="img\quick.jpg" />
     <Content Include="img\rain.jpg" />
     <Content Include="img\scene.png" />
+    <Content Include="img\tree.jpg" />
+    <Content Include="img\water.jpg" />
     <Content Include="img\weinisi.jpg" />
     <Content Include="img\wheat.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -220,6 +230,7 @@
     <Content Include="fonts\fontawesome\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\common.js" />
     <Content Include="Scripts\jq22.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -255,6 +266,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -268,6 +280,16 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLMODELS\BLLMODELS.csproj">
+      <Project>{3b11d6ff-4fc5-4292-b2d4-a1216694a01e}</Project>
+      <Name>BLLMODELS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{db4507f1-0afc-4181-96e9-2ddac701595b}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

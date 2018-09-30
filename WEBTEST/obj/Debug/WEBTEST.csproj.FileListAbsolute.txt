@@ -47,3 +47,15 @@ E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csprojResolveAssemblyReference.cach
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csproj.CoreCompileInputs.cache
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.dll
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.pdb
+E:\WEBTEST\WEBTEST\WEBTEST\bin\BLLMODELS.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\DAL.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\System.Web.Http.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\System.Net.Http.Formatting.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\BLLMODELS.pdb
+E:\WEBTEST\WEBTEST\WEBTEST\bin\DAL.pdb
+E:\WEBTEST\WEBTEST\WEBTEST\bin\DAL.dll.config
+E:\WEBTEST\WEBTEST\WEBTEST\bin\System.Web.Http.xml
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.xml
+E:\WEBTEST\WEBTEST\WEBTEST\bin\System.Net.Http.Formatting.xml
+E:\WEBTEST\WEBTEST\WEBTEST\bin\zh-Hans\EntityFramework.resources.dll
