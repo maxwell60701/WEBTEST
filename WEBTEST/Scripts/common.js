@@ -1,4 +1,9 @@
-﻿function Query(url, type, data, callback) {
+﻿var config = {
+
+    apiurl: "http://localhost:8010/"
+}
+
+function Query(url, type, data, callback) {
 
     //把JSON类型的数组传入方法
     $.ajax({
@@ -6,7 +11,7 @@
         async: false,
         type: type,
         dataType: 'json',
-        data: JSON.stringify(data),
+        data: data,
         success: callback
     });
 }

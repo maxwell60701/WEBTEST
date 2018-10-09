@@ -38,6 +38,7 @@ namespace WEBTEST
                                 "~/Scripts/jquery-1.10.2.js",
                                 "~/Scripts/jquery.min.js",
                                 "~/Scripts/jq22.js",
+                                "~/Scripts/common.js",
                                 "~/Scripts/jquery-latest.min.js"
 
                           ));

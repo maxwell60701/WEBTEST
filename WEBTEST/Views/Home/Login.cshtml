@@ -14,10 +14,10 @@
                 <h1>Login</h1>
 
                 <div>
-                    <input type="text" name="username" class="" style="width:310px" placeholder="电子邮箱/用户名" autocomplete="off">
+                    <input type="text" name="username" id="username" class="" style="width:310px" placeholder="电子邮箱/用户名" autocomplete="off">
                 </div>
                 <div>
-                    <input type="password" name="password" class="" style="width:310px" placeholder="密码" oncontextmenu="return false" onpaste="return false">
+                    <input type="password" name="password" id="password" class="" style="width:310px" placeholder="密码" oncontextmenu="return false" onpaste="return false">
                 </div>
                 <div>
                     <button id="submit" class="" type="button">登 录</button>
@@ -48,14 +48,24 @@
     $(function () {
 
         $('#submit').click(function () {
-            window.location.href = '@Url.Action("Index","Home")';
+            if (!$('#username').val() || !$('#password').val())
+                alert("不为空");
+            var logininfo = { UserName: $('#username').val(), PassWord: $('#password').val() };
+            Query(config.apiurl + 'api/Login/PostLogin', 'post', logininfo,
+                function (result) {
+                    var json = JSON.parse(result.Data);
+                    if (json)
+                        window.location.href = '@Url.Action("Index","Home")';
+                }
+            )
+           // window.location.href = '@Url.Action("Index","Home")';
         })
         //$.supersized = {
         //    vertical_center: 1,
         //    slideshow: 1,
         //    navigation: 1,
         //    thumbnail_navigation: 1,
-        //    transition: 0, //0-None, 1-Fade, 2-slide top, 3-slide right, 4-slide bottom, 5-slide left 
+        //    transition: 0, //0-None, 1-Fade, 2-slide top, 3-slide right, 4-slide bottom, 5-slide left
         //    pause_hover: 0,
         //    slide_counter: 1,
         //    slide_captions: 1,
@@ -76,5 +86,5 @@
         //    ]
         //};
         //$("#supersized").supersized();
-    }); 
+    });
 </script>
