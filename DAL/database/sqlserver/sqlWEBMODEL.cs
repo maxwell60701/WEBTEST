@@ -6,14 +6,14 @@ namespace DAL.database
     using System.Linq;
     using DAL.database.sqlserver;
 
-    public partial class WEBMODEL : DbContext
+    public partial class sqlWEBMODEL : WEBMODEL
     {
-        public WEBMODEL(string name)
-            : base(name)
+        public sqlWEBMODEL()
+            : base("name=sqlWEBMODEL")
         {
         }
 
-        public virtual DbSet<users> users { get; set; }
+        public override DbSet<users> users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -35,10 +35,6 @@ namespace DAL.database
 
             modelBuilder.Entity<users>()
                 .Property(e => e.Extend3)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<users>()
-                .Property(e => e.Password)
                 .IsUnicode(false);
         }
     }

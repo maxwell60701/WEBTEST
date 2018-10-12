@@ -39,6 +39,7 @@ namespace WEBTEST
                                 "~/Scripts/jquery.min.js",
                                 "~/Scripts/jq22.js",
                                 "~/Scripts/common.js",
+                                  "~/Scripts/layer.js",
                                 "~/Scripts/jquery-latest.min.js"
 
                           ));
@@ -50,6 +51,7 @@ namespace WEBTEST
                       "~/Content/style.css",
                        "~/Content/supersized.css",
                        "~/Content/index.css",
+                         "~/Content/layer.css",
                        "~/Content/jq22.css"));
             bundles.Add(new StyleBundle("~/Content/Index").Include(
                     "~/Content/bootstrap.css",                  

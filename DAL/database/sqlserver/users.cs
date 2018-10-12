@@ -1,4 +1,4 @@
-namespace DAL.database
+namespace DAL.database.sqlserver
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@ namespace DAL.database
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Users
+    public partial class users
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
@@ -18,10 +18,6 @@ namespace DAL.database
         [Required]
         [StringLength(36)]
         public string UserName { get; set; }
-
-        [Required]
-        [StringLength(36)]
-        public string Password { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime CreatedDate { get; set; }
@@ -37,5 +33,9 @@ namespace DAL.database
 
         [StringLength(36)]
         public string Extend3 { get; set; }
+
+        [Required]
+        [StringLength(36)]
+        public string Password { get; set; }
     }
 }

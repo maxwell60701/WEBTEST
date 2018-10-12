@@ -1,4 +1,4 @@
-namespace DAL.database
+namespace DAL.database.mysql
 {
     using System;
     using System.Data.Entity;
@@ -6,14 +6,14 @@ namespace DAL.database
     using System.Linq;
     using DAL.database.sqlserver;
 
-    public partial class WEBMODEL : DbContext
+    public partial class mqwebmodel : WEBMODEL
     {
-        public WEBMODEL(string name)
-            : base(name)
+        public mqwebmodel()
+            : base("name=mqwebmodel")
         {
         }
 
-        public virtual DbSet<users> users { get; set; }
+        public override DbSet<users> users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -26,6 +26,10 @@ namespace DAL.database
                 .IsUnicode(false);
 
             modelBuilder.Entity<users>()
+                .Property(e => e.Password)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<users>()
                 .Property(e => e.Extend1)
                 .IsUnicode(false);
 
@@ -35,10 +39,6 @@ namespace DAL.database
 
             modelBuilder.Entity<users>()
                 .Property(e => e.Extend3)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<users>()
-                .Property(e => e.Password)
                 .IsUnicode(false);
         }
     }

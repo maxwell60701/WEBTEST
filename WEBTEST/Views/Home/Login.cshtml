@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Login";
-    
+
 }
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/scroll")
@@ -9,18 +9,23 @@
 <body>
     <div class="width:100%">
 
-        <form method="post" style="top:200px;width:25%;height:350px;background:rgba(255,255,255,0.7);padding-top:-30px">
+        <form method="post" style="top:200px;width:25%;height:370px;background:rgba(255,255,255,0.7);padding-top:-30px">
             <div style="padding-top:30px">
                 <h1>Login</h1>
-
+                <p id="mention" style="display:none;color:red;">用户名或密码错误</p>
                 <div>
                     <input type="text" name="username" id="username" class="" style="width:310px" placeholder="电子邮箱/用户名" autocomplete="off">
                 </div>
                 <div>
                     <input type="password" name="password" id="password" class="" style="width:310px" placeholder="密码" oncontextmenu="return false" onpaste="return false">
                 </div>
+
                 <div>
                     <button id="submit" class="" type="button">登 录</button>
+                </div>
+                <div style="margin-top:15px">
+                    <a href="#" style="padding-right:40px;padding-left:10px">忘记密码?</a>
+                    <a href="#" style="">快速注册>></a>
                 </div>
             </div>
         </form>
@@ -48,16 +53,23 @@
     $(function () {
 
         $('#submit').click(function () {
-            if (!$('#username').val() || !$('#password').val())
-                alert("不为空");
-            var logininfo = { UserName: $('#username').val(), PassWord: $('#password').val() };
-            Query(config.apiurl + 'api/Login/PostLogin', 'post', logininfo,
-                function (result) {
-                    var json = JSON.parse(result.Data);
-                    if (json)
-                        window.location.href = '@Url.Action("Index","Home")';
-                }
-            )
+            if (!$('#username').val() )
+                layer.msg("用户名不为空");
+            else if (!$('#password').val())
+                layer.msg("密码不为空");
+            else {
+                var logininfo = { UserName: $('#username').val(), PassWord: $('#password').val() };
+                Query(config.apiurl + 'api/Login/PostLoginAsync', 'post', logininfo,
+                    function (result) {
+                        var json = JSON.parse(result.Data);
+                        if (json)
+                            window.location.href = '@Url.Action("Index","Home")';
+                        else {
+                            layer.msg("用户名或密码错误");; $('#submit').text("登录失败!");
+                        }
+                    }, function () { $('#submit').text("登录中..."); }
+                )
+            }
            // window.location.href = '@Url.Action("Index","Home")';
         })
         //$.supersized = {
