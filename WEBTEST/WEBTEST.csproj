@@ -175,6 +175,7 @@
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\icon-component.css" />
+    <Content Include="Content\icon-font.css" />
     <Content Include="Content\index.css" />
     <Content Include="Content\isotope.css" />
     <Content Include="Content\jq22.css" />
@@ -226,6 +227,7 @@
     <Content Include="img\rain.jpg" />
     <Content Include="img\scene.png" />
     <Content Include="img\tree.jpg" />
+    <Content Include="img\user.png" />
     <Content Include="img\water.jpg" />
     <Content Include="img\weinisi.jpg" />
     <Content Include="img\wheat.jpg" />

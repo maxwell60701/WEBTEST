@@ -63,7 +63,7 @@
                     function (result) {
                         var json = JSON.parse(result.Data);
                         if (json)
-                            window.location.href = '@Url.Action("Index","Home")';
+                            window.location.href = '@Url.Action("Index","Home")'+'?username=' + $('#username').val();
                         else {
                             layer.msg("用户名或密码错误");; $('#submit').text("登录失败!");
                         }

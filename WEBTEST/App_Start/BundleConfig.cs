@@ -52,11 +52,13 @@ namespace WEBTEST
                        "~/Content/supersized.css",
                        "~/Content/index.css",
                          "~/Content/layer.css",
+                         
                        "~/Content/jq22.css"));
             bundles.Add(new StyleBundle("~/Content/Index").Include(
                     "~/Content/bootstrap.css",                  
                      "~/Content/icon-component.css",
                      "~/Content/index.css",
+                  
                      "~/Content/jq22.css"
                     ));
 

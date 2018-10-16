@@ -125,9 +125,29 @@
 a {
     text-decoration: none;
 }
+.user img {
+    border-radius: 37px;
+    width: 40px;
+    position: relative;
+    margin-right:10px;
+  
+}
+.user
+{
+    padding-top:5px
+}
+.dropdown {
+    background-color: #FFF;
+    text-align: center;
+    line-height:30px;
+    display:none;
+    z-index:5;
+}
 
 li {
     text-decoration: none;
+    list-style: none;
+  
 }
 .testimonial h5 {
     color: #fff;
