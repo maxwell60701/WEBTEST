@@ -58,6 +58,10 @@ namespace WEBTEST.Controllers
             else
                 return View();
         }
+        public ActionResult ToLogin()
+        {
+            return View("Login");
+        }
         public ActionResult Register()
         {
             return View();
