@@ -20,6 +20,8 @@ namespace DAL
         public EnumError ErrorCode { get; set; }
         public string Message { get; set; }
         public T Data { get; set; }
+
+        public string MachineNumber => Helpers.GetMachineNum();
         public int TotalCount { get; set; }
         public int PageIndex { get; set; }
         public int PageSize { get; set; }

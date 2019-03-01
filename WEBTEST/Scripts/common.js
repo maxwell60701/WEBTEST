@@ -1,6 +1,7 @@
 ﻿var config = {
 
-    apiurl: "http://localhost:8010/"
+    apiurl: "http://localhost:8010/",
+    url: "http://localhost:8009/"
 }
 
 function Query(url, type, data, callback,beforesend='') {

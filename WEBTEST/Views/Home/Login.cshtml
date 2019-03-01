@@ -59,11 +59,11 @@
                 layer.msg("密码不为空");
             else {
                 var logininfo = { UserName: $('#username').val(), PassWord: $('#password').val() };
-                Query(config.apiurl + 'api/Login/PostLoginAsync', 'post', logininfo,
+                Query(config.url + '/Home/PostLoginAsync', 'post', logininfo,
                     function (result) {
-                        var json = JSON.parse(result.Data);
-                        if (json)
-                            window.location.href = '@Url.Action("Index","Home")'+'?username=' + $('#username').val();
+                        var json = JSON.parse(result);
+                        if (json) {
+                            window.location.href = '@Url.Action("Index","Home")' + '?username=' + $('#username').val();                        }
                         else {
                             layer.msg("用户名或密码错误");; $('#submit').text("登录失败!");
                         }

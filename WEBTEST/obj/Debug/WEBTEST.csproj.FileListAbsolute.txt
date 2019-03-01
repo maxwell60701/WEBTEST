@@ -81,3 +81,7 @@ E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csprojResolveAssemblyReference.cach
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csproj.CoreCompileInputs.cache
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.dll
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.pdb
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.SqlServer.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.xml
+E:\WEBTEST\WEBTEST\WEBTEST\bin\EntityFramework.SqlServer.xml

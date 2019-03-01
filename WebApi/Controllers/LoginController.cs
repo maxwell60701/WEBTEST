@@ -40,6 +40,7 @@ namespace WEBTEST.Controllers.Api
                 var DATA = await Task.Run(() => loginmodel.Login(logininfo)); ;
                 data = Helpers.DataToJson(DATA);
                 resultmodel = new Result<string>(data) { ErrorCode = EnumError.正常 };
+               
             }
             catch (Exception ex)
             {
@@ -54,33 +55,7 @@ namespace WEBTEST.Controllers.Api
             }
             return result;
         }
-        //[System.Web.Http.HttpGet]
-        //[System.Web.Http.HttpPost]
-        //public HttpResponseMessage PostLogin([FromBody]LoginInfo logininfo)
-        //{
-        //    var result = new HttpResponseMessage();
-        //    string msg = "";
-        //    var data = "";
-        //    var resultmodel = new Result<string>();
-        //    try
-        //    {
-        //        var DATA = loginmodel.Login(logininfo);
-        //        data = Helpers.DataToJson(DATA);
-        //        resultmodel = new Result<string>(data) { ErrorCode = EnumError.正常 };
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        msg = ex.Message;
-        //        resultmodel = new Result<string>(data) { ErrorCode = EnumError.异常 };
-        //    }
-        //    finally
-        //    {
-        //        result.Content = new StringContent(Helpers.DataToJson(resultmodel), Encoding.GetEncoding("UTF-8"),
-        //                    "application/json");
-
-        //    }
-        //    return result;
-        //}
+      
 
 
     }
