@@ -48,6 +48,8 @@ namespace WEBTEST.Controllers
         }
         public ActionResult Login()
         {
+            if (cache == null)
+                return View();
             if (cache.Get("MachineNumber") == null)
                 return View();
             if (cache.Get("MachineNumber").ToString() == MachineNumber)
