@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Caching;
 using System.Web.Mvc;
+using WEBTEST.Extend;
 using static DAL.Enums.Enums;
 
 namespace WEBTEST.Controllers
@@ -18,13 +19,17 @@ namespace WEBTEST.Controllers
     {
         private LoginModel loginmodel;
         private WEBMODEL _webmodels;
-        private Cache cache;
-        private string MachineNumber = Helpers.GetMachineNum();
+
+
         public HomeController()
         {
             _webmodels = LoginModel.Getdatabase(Convert.ToInt32(ConfigurationManager.AppSettings["database"]));
             loginmodel = new LoginModel(_webmodels);
+
             cache = HttpRuntime.Cache;
+
+
+
         }
 
         public ActionResult Index(string username)
@@ -46,19 +51,24 @@ namespace WEBTEST.Controllers
 
             return View();
         }
+        //  [CustomAuthorize]
         public ActionResult Login()
         {
-            if (HttpContext.Cache == null)
+
+            if (HttpRuntime.Cache == null)
                 return View();
-            if (HttpContext.Cache["MachineNumber"] == null)
+            if (HttpRuntime.Cache["MachineNumber"] == null)
                 return View();
-            if (HttpContext.Cache["MachineNumber"].ToString() == MachineNumber)
+            if (HttpRuntime.Cache["MachineNumber"].ToString() == Helpers.GetMachineNum())
             {
-                ViewBag.UserName = HttpContext.Cache["UserName"].ToString();
+                if (HttpRuntime.Cache.Get("UserName") != null)
+                {
+                    ViewBag.UserName = HttpRuntime.Cache.Get("UserName").ToString();
+                }
+
                 return View("Index");
             }
-            else
-                return View();
+            return View();
         }
         public ActionResult ToLogin()
         {
@@ -84,11 +94,12 @@ namespace WEBTEST.Controllers
                 var DATA = await Task.Run(() => loginmodel.Login(logininfo)); ;
                 data = Helpers.DataToJson(DATA);
                 resultmodel = new Result<string>(data) { ErrorCode = EnumError.正常 };
-                if (cache.Get("MachineNumber") == null)
+                if (HttpRuntime.Cache.Get("MachineNumber") == null)
                 {
-                    // cache.Add("MachineNumber", MachineNumber, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
-                    HttpContext.Cache.Insert("MachineNumber", MachineNumber, null, Cache.NoAbsoluteExpiration, Cache.NoSlidingExpiration);
-                    HttpContext.Cache.Insert("UserName", logininfo.UserName, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration);
+
+                    HttpRuntime.Cache.Add("MachineNumber", Helpers.GetMachineNum(), null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
+                    HttpRuntime.Cache.Add("UserName", logininfo.UserName, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
+
                 }
             }
             catch (Exception ex)
