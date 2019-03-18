@@ -26,7 +26,7 @@ namespace WEBTEST.Controllers
             _webmodels = LoginModel.Getdatabase(Convert.ToInt32(ConfigurationManager.AppSettings["database"]));
             loginmodel = new LoginModel(_webmodels);
 
-            cache = HttpRuntime.Cache;
+           
 
 
 
