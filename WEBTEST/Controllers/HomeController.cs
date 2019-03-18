@@ -24,7 +24,7 @@ namespace WEBTEST.Controllers
         {
             _webmodels = LoginModel.Getdatabase(Convert.ToInt32(ConfigurationManager.AppSettings["database"]));
             loginmodel = new LoginModel(_webmodels);
-            cache = new Cache();
+            cache = HttpRuntime.Cache;
         }
 
         public ActionResult Index(string username)
@@ -48,13 +48,13 @@ namespace WEBTEST.Controllers
         }
         public ActionResult Login()
         {
-            if (cache == null)
+            if (HttpContext.Cache == null)
                 return View();
-            if (cache.Get("MachineNumber") == null)
+            if (HttpContext.Cache["MachineNumber"] == null)
                 return View();
-            if (cache.Get("MachineNumber").ToString() == MachineNumber)
+            if (HttpContext.Cache["MachineNumber"].ToString() == MachineNumber)
             {
-                ViewBag.UserName = cache.Get("UserName").ToString();
+                ViewBag.UserName = HttpContext.Cache["UserName"].ToString();
                 return View("Index");
             }
             else
@@ -86,8 +86,9 @@ namespace WEBTEST.Controllers
                 resultmodel = new Result<string>(data) { ErrorCode = EnumError.正常 };
                 if (cache.Get("MachineNumber") == null)
                 {
-                    cache.Add("MachineNumber", MachineNumber, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
-                    cache.Add("UserName", logininfo.UserName, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
+                    // cache.Add("MachineNumber", MachineNumber, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration, CacheItemPriority.Low, null);
+                    HttpContext.Cache.Insert("MachineNumber", MachineNumber, null, Cache.NoAbsoluteExpiration, Cache.NoSlidingExpiration);
+                    HttpContext.Cache.Insert("UserName", logininfo.UserName, null, DateTime.Now.AddDays(3), Cache.NoSlidingExpiration);
                 }
             }
             catch (Exception ex)
