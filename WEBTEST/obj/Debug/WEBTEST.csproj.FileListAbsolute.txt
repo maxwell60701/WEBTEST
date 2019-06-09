@@ -80,9 +80,10 @@ E:\WEBTEST\WEBTEST\WEBTEST\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csproj.CoreCompileInputs.cache
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.dll
 E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.pdb
-E:\webtest\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csprojAssemblyReference.cache
-E:\webtest\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csproj.CopyComplete
 E:\webtest\WEBTEST\WEBTEST\bin\EntityFramework.dll
 E:\webtest\WEBTEST\WEBTEST\bin\EntityFramework.SqlServer.dll
 E:\webtest\WEBTEST\WEBTEST\bin\EntityFramework.xml
 E:\webtest\WEBTEST\WEBTEST\bin\EntityFramework.SqlServer.xml
+E:\WEBTEST\WEBTEST\WEBTEST\bin\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\WEBTEST\WEBTEST\WEBTEST\bin\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\WEBTEST\WEBTEST\WEBTEST\obj\Debug\WEBTEST.csprojResolveAssemblyReference.cache
